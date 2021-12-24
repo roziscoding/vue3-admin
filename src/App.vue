@@ -2,15 +2,16 @@
 </script>
 
 <template>
-  <router-view></router-view>
+	<router-view></router-view>
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
-@import './styles/index';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("/node_modules/@dracula/dracula-ui/styles/dracula-ui.css");
+@import "./styles/index";
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 }
 </style>

@@ -5,11 +5,11 @@
       <form @submit.prevent="doLogin">
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" v-model="login" />
+          <text-input type="email" id="email" v-model="login" color="purple" />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" v-model="password" />
+          <text-input type="password" id="password" v-model="password" color="purple" />
         </div>
         <button type="submit" class="btn btn-primary submit" :disabled="!valid">Login</button>
       </form>
@@ -19,6 +19,8 @@
 
 <script lang="ts" setup>
 import PageCenter from '@/components/PageCenter.vue'
+import TextInput from '@/components/TextInput.vue'
+
 import { useAuthStore } from '@/store/auth'
 import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
