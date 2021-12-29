@@ -1,0 +1,28 @@
+export type DracColors =
+  | 'animated'
+  | 'purple-cyan'
+  | 'yellow-pink'
+  | 'cyan-green'
+  | 'pink-purple'
+  | 'cyan'
+  | 'green'
+  | 'orange'
+  | 'pink'
+  | 'purple'
+  | 'red'
+  | 'yellow'
+  | 'white'
+  | 'black'
+  | 'black-secondary'
+  | 'black-light'
+
+export type DracSimpleColors =
+  | 'cyan'
+  | 'green'
+  | 'orange'
+  | 'pink'
+  | 'purple'
+  | 'red'
+  | 'yellow'
+
+export type DracSizes = 'xs' | 'sm' | 'md' | 'lg'

@@ -1,9 +1,15 @@
 <template>
-  <h1>Hello, {{ username }}!</h1>
-  <button @click="logout">Logout</button>
+  <navbar-layout>
+    <main class="drac-text-white">
+      <h1>Hello, {{ username }}!</h1>
+      <drac-button @click="logout">Logout</drac-button>
+    </main>
+  </navbar-layout>
 </template>
 
 <script lang="ts" setup>
+import DracButton from '@/components/DracButton.vue'
+import NavbarLayout from '@/components/layout/NavbarLayout.vue'
 import { useAuthStore } from '@/store/auth'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'

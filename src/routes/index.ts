@@ -1,14 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import applyAuthMiddleware from './middleware/auth'
 
-const pageRoutes = [
+const routes = [
   { path: '/login', component: () => import('../pages/Login.vue') },
   { path: '/', component: () => import('../pages/Home.vue') }
 ]
 
 export const router = createRouter({
   history: createWebHashHistory(),
-  routes: [...pageRoutes]
+  routes
 })
 
 applyAuthMiddleware(router)

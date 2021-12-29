@@ -3,6 +3,7 @@
 </template>
 
 <script lang="ts" setup>
+import { DracColors } from '@/types/drac'
 import { computed } from 'vue'
 
 const emit = defineEmits([ 'update:modelValue' ])
@@ -12,7 +13,7 @@ const updateModelValue = (e: any) => {
 }
 
 type Props = {
-  color?: 'cyan' | 'green' | 'orange' | 'pink' | 'purple' | 'red' | 'yellow' | 'white',
+  color?: DracColors,
   size?: 'lg' | 'md' | 'sm',
   outline?: boolean,
   modelValue?: string
